@@ -1,0 +1,5 @@
+<template name="tag">
+  <view class="a-tag {{selected ? 'a-tag-active' : 'a-tag-normal'}}" onTap="{{onChange}}" data-selected="{{selected}}">
+    <text class="tag">{{label}}<text>
+  </view>  
+</template>

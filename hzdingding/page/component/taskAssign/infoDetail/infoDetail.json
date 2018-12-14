@@ -1,0 +1,8 @@
+{
+    "defaultTitle": "信息下发详情",
+    "usingComponents":{
+        "badge": "../../../common/badge/index",
+        "list-item":"mini-ddui/es/list/list-item/index",
+        "breadcrumb":"mini-ddui/es/breadcrumb/index"
+    }
+}

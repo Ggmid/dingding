@@ -1,0 +1,7 @@
+{
+    "defaultTitle": "接收详情",
+    "usingComponents":{
+        "tabs":"mini-ddui/es/tabs/index",
+        "tab-content": "mini-ddui/es/tabs/tab-content/index"
+    }
+}

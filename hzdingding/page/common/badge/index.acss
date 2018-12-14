@@ -1,0 +1,46 @@
+.circle-default{
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    background: #f00;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+}
+.circle-big{
+    width:50px;
+    height:50px;
+    line-height: 50px;
+}
+
+.circle-small{
+    width:10px;
+    height:10px;
+    line-height: 10px;
+}
+
+.circle-normal{
+    width:30px;
+    height:30px;
+    line-height: 30px;
+}
+
+.circle-red{
+    background-color:#f00;
+}
+
+.circle-blue{
+    background-color: cornflowerblue;
+}
+.circle-delete {
+    position: absolute;
+    width: 15px;
+    top: 0px;
+    height: 15px;
+    right: 0px;
+    background: rgba(35, 33, 33, 0.9);
+    border-radius: 100%;
+    line-height: 15px;
+}

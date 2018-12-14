@@ -1,0 +1,67 @@
+<import src="/util/infolist/index.axml"/>
+<view class="container">
+    <view class="info-header">
+        <badge value="张三" size="big" color="blue" className="info-header-badge">
+        </badge>
+        <text class="info-header-dept">湖州交通局指挥中心
+        </text>
+        <text class="info-header-time">2019年10月28日
+        </text>
+    </view>
+    <view class="info-detail">
+        <view class="info-detail-dept">
+            <view class="info-detail-item">
+                <view class="info-detail-label">审批编号
+                </view>
+                <view class="info-detail-value">344724924792342
+                </view>
+            </view>
+            <view class="info-detail-item">
+                <view class="info-detail-label">所在部门
+                </view>
+                <view class="info-detail-value">湖州指挥中心
+                </view>
+            </view>
+            <view class="info-detail-item">
+                <view class="info-detail-label">标题
+                </view>
+                <view class="info-detail-value">2018年十一高速免费通过性的大蛋糕的大师大
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="info-detail-content">
+        <view class="info-detail-item">
+            <view class="info-detail-label">内容
+            </view>
+            <view class="info-detail-value">2018年十一高速免费通过性的大蛋糕2018年十一高速免费通过性的大蛋糕2018年十一高速免费通过性的大蛋糕2018年十一高速免费通过性的大蛋糕2018年十一高速免费通过性的大蛋糕2018年十一高速免费通过性的大蛋糕2018年十一高速免费通过性的大蛋糕
+            </view>
+        </view>
+    </view>
+    <view class="info-file">
+        <text>达到噶简单干净的</text>
+    </view>
+    <view class="info-receive">
+        <list-item
+            className="{{index === 0 ? 'am-list-sticky' : ''}}"
+            arrow=true
+            index="0"
+            onClick="onItemClick"
+            >
+            接收人
+            <view slot="extra">
+                张小等使人
+            </view>
+        </list-item>
+    </view>
+    <view class="info-process">
+        <block a:for="{{processData}}">
+            <template is='list-item' data="{{item}}"/>
+        </block>
+    </view>
+    <view class="info-btn-group">
+        <block a:for="{{values}}">
+            <text data-btn="{{item.value}}" class="info-btn-flex" onTap="processTap">{{item.name}}</text>
+        </block>
+    </view>
+</view>

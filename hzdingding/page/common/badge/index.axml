@@ -1,0 +1,3 @@
+<block>
+    <view onTap="deletes" class="circle-default circle-{{size}} circle-{{color}} {{classname}}">{{value}}<text a:if="{{isdelete}}" class="circle-delete">x</text></view>
+</block>

@@ -1,0 +1,23 @@
+<import src="/util/lifecycle.axml"/>
+<import src="/util/grid/index.axml"/>
+<import src="/util/items/index.axml"/>
+
+<view class="container" key="container">
+    <view class="slogon">
+        <image src="/image/logo.png" mode="scaleToFill" class="logo"/>
+    </view>
+    <view class='info_title'>
+        <text>日常管理</text>
+    </view>
+    <template is="grid" data="{{...dailyArr}}"/>
+    <view class='info_title'>
+        <text>事件管理</text>
+    </view>
+    <template is="grid" data="{{...eventArr}}"/>
+</view>
+
+<template
+        key="lifecycle"
+        is="lifecycle"
+        a:if="{{debug}}"
+/>

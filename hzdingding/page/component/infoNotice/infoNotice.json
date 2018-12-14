@@ -1,0 +1,8 @@
+{
+    "defaultTitle": "信息列表",
+    "pullRefresh": false,
+    "usingComponents":{
+        "searchbar": "mini-ddui/es/search-bar/index",
+        "swipe-action":"mini-ddui/es/swipe-action/index"
+    }
+}

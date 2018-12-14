@@ -1,0 +1,15 @@
+<view class="dd-segment {{className}} {{disabled ? 'dd-segment-disabled' : ''}}" style="{{style}}" >
+  <block a:for="{{values}}">
+    <view 
+      key="dd-segment-item-{{index}}"
+      class="dd-segment-item {{ current === index ? 'dd-segment-item-selected' : '' }}" 
+      hover-class="dd-segment-item-active"
+      onTap="handleItemTap"
+      data-index="{{index}}"
+      data-value="{{item}}"
+    >
+      <view class="dd-segment-item-mask" ></view>
+      {{item}}
+    </view>
+  </block>
+</view>

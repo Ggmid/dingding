@@ -1,0 +1,17 @@
+<import src="../../biz/components/tag/index.axml" />
+
+<view class="container">
+    <view a:for="{{listdata}}">
+        <view class="mt-24"><text>{{item.tags[index].label}}</text></view>
+        <view class="tag-list">
+            <view a:for="{{item.tags}}" a:for-item="tagitem" a:for-index="tagindex">
+                <template is="tag" data="{{...tagitem}}"  />
+            </view>
+           
+        </view>
+    </view>
+    
+    <view class="mt-24">
+        <text>您选择的是: {{selectedLables}}</text>
+    </view>
+</view>

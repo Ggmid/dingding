@@ -1,0 +1,27 @@
+<template name='list-item'>
+    <!-- <view class="infolist" a:for="{{items}}" key='infolist'> -->
+        <view class="am-list-item am-list-{{item.align}} {{multipleLine ? 'am-list-multiple' : ''}} {{last ? 'last': ''}}" hover-class="{{disabled ? '' : 'am-list-item-hover'}}" onTap="onItemTap" data-index="{{item.index}}">
+            <image a:if={{item.thumb}} class="am-list-thumb" src="{{item.thumb}}" mode="scaleToFill" />
+            <view class="am-list-notice">
+                <text a:if={{item.status}} class="am-circle-point">
+                </text>
+                <view a:if={{item.person}} class="am-list-person">{{item.person}}
+                </view>
+            </view>
+            <view class="am-list-line {{wrap ? 'am-list-wrap' : ''}}">
+                <view class="am-list-content">
+                    <view class="am-list-title">{{item.title}}
+                        <text a:if={{item.approveStatus}} class="am-list-approveSstatus">{{item.approveStatus}}
+                        </text>
+                    </view>
+                    <view class="am-list-brief">{{item.brief}}
+                    </view>
+                </view>
+                <view a:if={{item.extra}} class="am-list-extra">                        {{item.extra}}                    
+                </view>
+                <view a:if={{item.arrow}} class="am-list-arrow-2" />
+                <view class="am-list-line-bottom" />
+            </view>
+        </view>
+    <!-- </view> -->
+</template>

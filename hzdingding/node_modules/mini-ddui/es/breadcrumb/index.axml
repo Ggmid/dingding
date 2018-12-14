@@ -1,0 +1,20 @@
+<view class="dd-breadcrumb {{className}}" style="{{style}}" >
+  <scroll-view 
+    class="dd-breadcrumb-content" 
+    scroll-x="{{true}}" 
+    scroll-left="{{scrollLeft}}"
+  >
+    <block a:for="{{values}}">
+      <view 
+        key="dd-breadcrumb-item-{{index}}"
+        class="dd-breadcrumb-item {{ values.length - 1 === index ? 'dd-breadcrumb-item-selected' : '' }}" 
+        onTap="handleItemTap"
+        data-index="{{index}}"
+        data-value="{{item}}"
+      >
+        {{item}}
+      </view>
+      <view class="dd-breadcrumb-divider" a:if="{{values.length - 1 !== index}}" />
+    </block>
+  </scroll-view>
+</view>

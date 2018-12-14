@@ -1,0 +1,56 @@
+.dd-segment {
+  display: flex;
+  height: 28px;
+  overflow: hidden;
+  line-height: 28px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.dd-segment-disabled .dd-segment-item {
+  opacity: 0.3;
+}
+
+.dd-segment-item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 12px;
+  border: 1px solid #3296FA;
+  border-left-width: 0;
+  color: #3296FA;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.dd-segment-item:first-child {
+  border-left-width: 1px;
+  border-radius: 3px 0 0 3px;
+}
+
+.dd-segment-item:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.dd-segment-item-selected {
+  color: #fff;
+  background: #3296FA;
+}
+
+.dd-segment-item-active .dd-segment-item-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  transition: background .2s;
+  background-color: #3296FA;
+}
+
+.dd-segment-disabled .dd-segment-item-mask {
+  width: 0;
+}

@@ -1,0 +1,10 @@
+<import src="/util/infolist/index.axml"/>
+<view class="infolist-container page">
+    <searchbar></searchbar>
+    <block a:for="{{infolistData}}">
+        <!-- <swipe-action right="{{right1}}"> -->
+        <template is='list-item' data="{{item}}"/>
+        <!-- </swipe-action> -->
+    </block>
+    
+</view>

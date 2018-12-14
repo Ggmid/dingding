@@ -1,0 +1,64 @@
+<import src="/util/infolist/index.axml"/>
+<import src="/util/picker/picker.axml"/>
+<import src="/util/date-picker/date-picker.axml"/>
+<view class="event-container container">
+  <tabs tabs="{{tabs}}" onTabClick="handleTabClick" onChange="handleTabChange">
+    <tab-content>
+      <view class="tab-content">
+        <view class="event-map-container">
+            <map longitude="120.141461" latitude="30.279383" style="width:100%;height:100px;"></map>
+        </view>
+        <view class="event-form-container">
+          <form onSubmit="formSubmit" onReset="">
+            <template is="picker" data="{{...eventType}}">
+            </template>
+            <template is="picker" data="{{...eventLevel}}">
+            </template>
+            <input-item className="input-item" placeholder="请输入事件名称">
+              <text class="red">*
+              </text>事件名称              
+            </input-item>
+            <template is="date-picker" data="{{...date}}">
+            </template>
+            <input-item className="input-item" placeholder="请输入事件详细信息">                  事件描述            
+            </input-item>
+            <view class="item-row">
+            </view>
+            <view class="event-form-upload">
+              <view class="label">附件
+              </view>
+              <image class="event-form-upload-img" src="../../../image/media.png" mode="aspectFit"/>
+            </view>
+            <view class="item-row">
+            </view>
+            <view class="event-form-notice">
+              <view class="label">通知人
+              </view>
+              <view class="event-form-notice-person">
+                <block a:for="{{personArr}}">
+                  <badge classname="badge-flex" color="blue" isdelete=true size="big" value="{{item.name}}" data="{{...item}}" index="{{index}}" onDeleteHandle="onDeleteHandle">
+                  </badge>
+                </block>
+                <view class="event-notice-person-add" onTap="choosePerson">+</view>
+                <!-- <image class="event-form-notice-img" src="../../../image/ant.png" mode="aspectFit" onTap="choosePerson"/> -->
+              </view>
+            </view>
+            <view class="item-row">
+            </view>
+            <view class="event-form-submit">
+              <button formType="submit" class="event-form-submit-btn">提交
+              </button>
+            </view>
+          </form>
+        </view>
+      </view>
+    </tab-content>
+    <tab-content>
+      <view class="tab-content">
+        <block a:for="{{eventlistData}}">
+          <template is='list-item' data="{{item}}"/>
+        </block>
+      </view>
+    </tab-content>
+  </tabs>
+</view>

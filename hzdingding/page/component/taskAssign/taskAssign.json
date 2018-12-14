@@ -1,0 +1,8 @@
+{
+    "defaultTitle": "任务下发",
+    "pullRefresh": false,
+    "usingComponents":{
+        "searchbar": "mini-ddui/es/search-bar/index",
+        "swipe-action":"mini-ddui/es/swipe-action/index"
+    }
+}

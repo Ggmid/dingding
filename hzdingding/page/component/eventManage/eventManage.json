@@ -1,0 +1,9 @@
+{
+    "defaultTitle": "事件管理",
+    "usingComponents":{
+        "tabs":"mini-ddui/es/tabs/index",
+        "tab-content": "mini-ddui/es/tabs/tab-content/index",
+        "input-item":"mini-ddui/es/input-item/index",
+        "badge":"../../common/badge/index"
+    }
+}

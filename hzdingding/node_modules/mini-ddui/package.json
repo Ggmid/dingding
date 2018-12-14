@@ -1,0 +1,20 @@
+{
+  "name": "mini-ddui",
+  "version": "0.0.5",
+  "description": "钉钉E应用扩展组件库",
+  "files": [
+    "es"
+  ],
+  "keywords": [
+    "dingtalk"
+  ],
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
+    "pub": "git push origin && npm run build && npm publish"
+  },
+  "devDependencies": {
+    "rc-tools": "6.x"
+  },
+  "author": "",
+  "license": "MIT"
+}

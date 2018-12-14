@@ -1,0 +1,17 @@
+<template name="date-picker">
+    <view class="page-section">
+        <view class="date-pick-container" onTap="{{datePick}}">
+            <view class="row row-border">
+                <view class="row-title">
+                    <text a:if="{{require}}" class="red">
+                        *
+                    </text>{{label}}                
+                </view>
+                <view class="row-extra">                    
+                    {{value}}                
+                </view>
+                <image class="row-arrow" src="/image/arrowright.png" mode="aspectFill" />
+            </view>
+        </view>
+    </view>
+</template>

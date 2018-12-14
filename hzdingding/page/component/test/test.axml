@@ -1,0 +1,4 @@
+<view>
+  <button onTap="btnClick">选择联系人</button>
+  <button onTap="gettoken">获取企业信息</button>  
+</view>
